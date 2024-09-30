@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Joke Generator</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+            <div class="card-body text-center">
+                <h1 class="display-4 text-primary">Get a Joke</h1>
+            <form action="/catJoke" method="get" class="mt-4">
+            
+                <div class="form-group">
+                    <label for="category" class="h5">Select a Joke Category:</label>
+                    <select id="category" name="category" class="form-control">
+                        <option value="Any">Any</option>
+                        <option value="Pun">Pun</option>
+                        <option value="Dark">Dark</option>
+                        <option value="Spooky">Spooky</option>
+                        <option value="Christmas">Christmas</option>
+                        <option value="Programming">Programming</option>
+                        <option value="Miscellaneous">Miscellaneous</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg mt-2">Get a Joke</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
